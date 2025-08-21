@@ -10,7 +10,7 @@ const TokenStats = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [showCopyTooltip, setShowCopyTooltip] = useState(false);
 
-  const isLaunched = true; // Set to true when launching
+  const isLaunched = false; // Set to true when launching
   const TOKEN_ADDRESS = isLaunched ? "BiBLETokenAddressWillGoHere123456789" : null;
   const TOTAL_SUPPLY = 1000000000; // 1 billion fixed supply
 
