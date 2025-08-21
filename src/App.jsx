@@ -134,7 +134,7 @@ function App() {
           <button
             onClick={() => setShowDocs(true)}
             className="px-4 py-2 bg-black/30 backdrop-blur-md border border-gold-500/30 
-                      text-gold-400 hover:bg-gold-500/10 transition-colors 
+                      text-blue-400 hover:bg-blue-500/10 transition-colors 
                       flex items-center gap-2"
           >
             <Book size={20} />
@@ -145,7 +145,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-black/30 backdrop-blur-md border border-gold-500/30 
-                      text-gold-400 hover:bg-gold-500/10 transition-colors 
+                      text-blue-400 hover:bg-blue-500/10 transition-colors 
                       flex items-center gap-2"
           >
             <Twitter size={20} />
@@ -154,7 +154,7 @@ function App() {
           <button
             onClick={toggleMusic}
             className="px-4 py-2 bg-black/30 backdrop-blur-md border border-gold-500/30 
-                      text-gold-400 hover:bg-gold-500/10 transition-colors 
+                      text-blue-400 hover:bg-blue-500/10 transition-colors 
                       flex items-center gap-2"
           >
             {isMusicPlaying ? <Volume2 size={20} /> : <VolumeX size={20} />}
@@ -176,7 +176,7 @@ function App() {
               setShowAngelCreation(true);
             }}
             className="absolute left-8 top-[calc(50%+310px)] w-80 p-3 border border-gold-500/30 
-                      bg-black/30 backdrop-blur-md text-gold-400 hover:bg-gold-500/10 flex items-center gap-2"
+                      bg-black/30 backdrop-blur-md text-blue-400 hover:bg-blue-500/10 flex items-center gap-2"
           >
             <Plus size={20} />
             <span>Call Upon Angel</span>
@@ -188,7 +188,7 @@ function App() {
             <button
               onClick={() => setShowSettings(true)}
               className="px-6 py-3 bg-black/30 backdrop-blur-md border border-gold-500/30 
-                        text-gold-400 hover:bg-gold-500/10 transition-colors 
+                        text-blue-400 hover:bg-blue-500/10 transition-colors 
                         flex items-center gap-2"
             >
               <Settings size={20} />
@@ -199,7 +199,7 @@ function App() {
             <button
               onClick={() => setShowScanner(prev => !prev)}
               className="px-6 py-3 bg-black/30 backdrop-blur-md border border-gold-500/30 
-                        text-gold-400 hover:bg-gold-500/10 transition-colors 
+                        text-blue-400 hover:bg-blue-500/10 transition-colors 
                         flex items-center gap-2"
             >
               <Eye size={20} />
@@ -210,7 +210,7 @@ function App() {
             <button
               onClick={() => walletAddress ? setShowWalletPopup(true) : connectWallet()}
               className="px-6 py-3 bg-black/30 backdrop-blur-md border border-gold-500/30 
-                        text-gold-400 hover:bg-gold-500/10 transition-colors 
+                        text-blue-400 hover:bg-blue-500/10 transition-colors 
                         flex items-center gap-2"
             >
               <Wallet size={20} />
