@@ -166,3 +166,5 @@ const Documentation = ({ onClose }) => {
 };
 
 export default Documentation;
+  )
+}
