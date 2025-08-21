@@ -38,7 +38,6 @@ const Documentation = ({ onClose }) => {
           {/* Introduction */}
           <section>
             <h2 className="text-2xl text-gold-400 font-semibold mb-4">
-            <h2 className="text-2xl text-blue-400 font-semibold mb-4">
               Introduction
             </h2>
             <p className="text-blue-300/90 leading-relaxed">
