@@ -141,7 +141,7 @@ function App() {
             <span>Docs</span>
           </button>
           <a 
-            href="https://x.com/TheHolyBible"
+            href="https://x.com/HeavenHolyBible"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-blue-900/30 backdrop-blur-md border border-blue-500/30 
