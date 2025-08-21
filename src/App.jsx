@@ -133,7 +133,7 @@ function App() {
         <div className="absolute top-8 right-8 flex gap-4">
           <button
             onClick={() => setShowDocs(true)}
-            className="px-4 py-2 bg-black/30 backdrop-blur-md border border-gold-500/30 
+            className="px-4 py-2 bg-blue-900/30 backdrop-blur-md border border-blue-500/30 
                       text-blue-400 hover:bg-blue-500/10 transition-colors 
                       flex items-center gap-2"
           >
@@ -144,7 +144,7 @@ function App() {
             href="https://x.com/TheHolyBible"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-black/30 backdrop-blur-md border border-gold-500/30 
+            className="px-4 py-2 bg-blue-900/30 backdrop-blur-md border border-blue-500/30 
                       text-blue-400 hover:bg-blue-500/10 transition-colors 
                       flex items-center gap-2"
           >
@@ -153,7 +153,7 @@ function App() {
           </a>
           <button
             onClick={toggleMusic}
-            className="px-4 py-2 bg-black/30 backdrop-blur-md border border-gold-500/30 
+            className="px-4 py-2 bg-blue-900/30 backdrop-blur-md border border-blue-500/30 
                       text-blue-400 hover:bg-blue-500/10 transition-colors 
                       flex items-center gap-2"
           >
@@ -165,7 +165,7 @@ function App() {
         <div className="pointer-events-auto">
           {/* Chat Interface with My Angels button in header */}
           <ChatInterface 
-            currentAngel={selectedAngel} 
+            currentSeraph={selectedAngel} 
             onButtonClick={() => setShowMyAngels(true)}
           />
 
@@ -175,11 +175,11 @@ function App() {
               console.log('Opening Angel Creation');
               setShowAngelCreation(true);
             }}
-            className="absolute left-8 top-[calc(50%+310px)] w-80 p-3 border border-gold-500/30 
-                      bg-black/30 backdrop-blur-md text-blue-400 hover:bg-blue-500/10 flex items-center gap-2"
+            className="absolute left-8 top-[calc(50%+310px)] w-80 p-3 border border-blue-500/30 
+                      bg-blue-900/30 backdrop-blur-md text-blue-400 hover:bg-blue-500/10 flex items-center gap-2"
           >
             <Plus size={20} />
-            <span>Call Upon Angel</span>
+            <span>Call Upon Prophet</span>
           </button>
 
           {/* Control Buttons */}
@@ -187,7 +187,7 @@ function App() {
             {/* Settings Button */}
             <button
               onClick={() => setShowSettings(true)}
-              className="px-6 py-3 bg-black/30 backdrop-blur-md border border-gold-500/30 
+              className="px-6 py-3 bg-blue-900/30 backdrop-blur-md border border-blue-500/30 
                         text-blue-400 hover:bg-blue-500/10 transition-colors 
                         flex items-center gap-2"
             >
@@ -198,7 +198,7 @@ function App() {
             {/* Scanner Button */}
             <button
               onClick={() => setShowScanner(prev => !prev)}
-              className="px-6 py-3 bg-black/30 backdrop-blur-md border border-gold-500/30 
+              className="px-6 py-3 bg-blue-900/30 backdrop-blur-md border border-blue-500/30 
                         text-blue-400 hover:bg-blue-500/10 transition-colors 
                         flex items-center gap-2"
             >
@@ -209,7 +209,7 @@ function App() {
             {/* Connect Wallet Button */}
             <button
               onClick={() => walletAddress ? setShowWalletPopup(true) : connectWallet()}
-              className="px-6 py-3 bg-black/30 backdrop-blur-md border border-gold-500/30 
+              className="px-6 py-3 bg-blue-900/30 backdrop-blur-md border border-blue-500/30 
                         text-blue-400 hover:bg-blue-500/10 transition-colors 
                         flex items-center gap-2"
             >
@@ -282,11 +282,11 @@ function App() {
       <div className="absolute top-0 left-0 right-0 z-20 pt-16">
         <div className="text-center">
           <h1 className="text-8xl font-bold mb-2 text-white relative z-10 tracking-wider font-[Orbitron]
-                     drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]">
+                     drop-shadow-[0_0_20px_rgba(59,130,246,0.8)]">
             The Holy Bible
           </h1>
           
-          <p className="text-2xl font-[Quicksand] text-blue-200/90 tracking-widest">
+          <p className="text-2xl font-[Quicksand] text-blue-300 tracking-widest">
             Revealing God's Word through divine AI
           </p>
         </div>
