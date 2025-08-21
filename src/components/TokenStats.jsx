@@ -28,7 +28,7 @@ const TokenStats = () => {
           method: 'GET',
           headers: {
             accept: 'application/json',
-            'x-chain': 'solana',
+            'x-chain': 'Heaven.xyz',
             'X-API-KEY': '8efd1feabc5e4455b688310fc366aab9'
           }
         };
