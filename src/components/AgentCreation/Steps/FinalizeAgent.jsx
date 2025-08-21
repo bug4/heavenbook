@@ -71,3 +71,5 @@ const FinalizeProphet = ({ data, onBack, onFinish }) => {
 };
 
 export default FinalizeProphet;
+  )
+}
