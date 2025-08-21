@@ -150,7 +150,7 @@ const TokenStats = () => {
         {/* Token Description */}
         <div className="p-2 bg-blue-500/5 border border-blue-500/20">
           <div className="text-blue-400 text-xs mb-2">About $BIBLE</div>
-          <p className="text-blue-300 text-xs leading-relaxed">
+          <p className="text-blue-300/90 text-xs leading-relaxed">
             The Holy Bible ($BIBLE) is the sacred token that unlocks biblical wisdom and God's Word. 
             It grants holders access to biblical revelations, AI prophets, and participation 
             in the governance of this sacred protocol that brings God's Word to the digital age.

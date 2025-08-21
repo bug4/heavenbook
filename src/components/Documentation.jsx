@@ -28,7 +28,7 @@ const Documentation = ({ onClose }) => {
           <h1 className="text-4xl font-bold text-white mb-4">
             The Holy Bible Documentation
           </h1>
-          <p className="text-blue-300">
+          <p className="text-blue-300/90">
             A comprehensive guide to The Holy Bible platform and its biblical features.
           </p>
         </div>
@@ -37,7 +37,7 @@ const Documentation = ({ onClose }) => {
         <div className="space-y-12">
           {/* Introduction */}
           <section>
-            <h2 className="text-2xl text-gold-400 font-semibold mb-4">
+            <h2 className="text-2xl text-blue-400 font-semibold mb-4">
               Introduction
             </h2>
             <p className="text-blue-300/90 leading-relaxed">

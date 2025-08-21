@@ -70,22 +70,22 @@ const TokenCard = ({ token, walletConnected, showAlert }) => {
          <div className="flex justify-between items-start">
            <div>
              <div className="text-gold-300 font-medium">{token.name}</div>
-             <div className="text-gold-400/60 text-sm">{token.symbol}</div>
+             <div className="text-blue-400/60 text-sm">{token.symbol}</div>
            </div>
-           <div className="text-gold-400/60 text-xs">
+           <div className="text-blue-400/60 text-xs">
              {new Date(token.timestamp).toLocaleTimeString()}
            </div>
          </div>
 
          {/* Contract Address */}
          <div className="flex items-center gap-2 mt-2">
-           <div className="text-gold-400/40 text-xs truncate flex-1">
+           <div className="text-blue-400/40 text-xs truncate flex-1">
              {token.mint}
            </div>
            <button
              onClick={() => copyToClipboard(token.mint)}
              className="px-4 py-1.5 bg-blue-500/10 border border-blue-500/30 
-                      text-blue-400 hover:bg-blue-500/20 transition-colors"
+                      text-blue-400 hover:bg-blue-500/10 transition-colors"
              title="Copy contract address"
            >
              {copied ? <CheckCircle size={16} /> : <Copy size={16} />}
