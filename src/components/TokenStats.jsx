@@ -28,7 +28,7 @@ const TokenStats = () => {
           method: 'GET',
           headers: {
             accept: 'application/json',
-            'x-chain': 'Heaven.xyz',
+            'x-chain': 'solana',
             'X-API-KEY': '8efd1feabc5e4455b688310fc366aab9'
           }
         };
@@ -142,8 +142,8 @@ const TokenStats = () => {
         {/* Network Info */}
         <div className="p-2 bg-blue-500/5 border border-blue-500/20">
           <div className="flex items-center justify-between">
-            <span className="text-blue-400 text-xs">Network</span>
-            <span className="text-blue-300 text-xs">Solana</span>
+            <span className="text-blue-400 text-xs">Launchpad</span>
+            <span className="text-blue-300 text-xs">Heaven.xyz</span>
           </div>
         </div>
 
