@@ -9,15 +9,15 @@ import ScanningInterface from './components/ScanningInterface';
 import WalletPopup from './components/WalletPopup';
 import Documentation from './components/Documentation';
 import Alert from './components/Alert';
-import { Plus, Twitter, Volume2, VolumeX, Eye, Settings, Wallet, BookOpen } from 'lucide-react';
+import { Plus, Twitter, Volume2, VolumeX, Eye, Settings, Wallet, Book } from 'lucide-react';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isSplineLoaded, setIsSplineLoaded] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
-  const [showSeraphCreation, setShowSeraphCreation] = useState(false);
-  const [showMySeraphs, setShowMySeraphs] = useState(false);
-  const [selectedSeraph, setSelectedSeraph] = useState(null);
+  const [showAngelCreation, setShowAngelCreation] = useState(false);
+  const [showMyAngels, setShowMyAngels] = useState(false);
+  const [selectedAngel, setSelectedAngel] = useState(null);
   const [isMusicPlaying, setIsMusicPlaying] = useState(true);
   const [showScanner, setShowScanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
@@ -137,11 +137,11 @@ function App() {
                       text-gold-400 hover:bg-gold-500/10 transition-colors 
                       flex items-center gap-2"
           >
-            <BookOpen size={20} />
+            <Book size={20} />
             <span>Docs</span>
           </button>
           <a 
-            href="https://x.com/TheHeavenBook"
+            href="https://x.com/TheHolyBible"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-black/30 backdrop-blur-md border border-gold-500/30 
@@ -163,23 +163,23 @@ function App() {
         </div>
 
         <div className="pointer-events-auto">
-          {/* Chat Interface with My Seraphs button in header */}
+          {/* Chat Interface with My Angels button in header */}
           <ChatInterface 
-            currentSeraph={selectedSeraph} 
-            onButtonClick={() => setShowMySeraphs(true)}
+            currentAngel={selectedAngel} 
+            onButtonClick={() => setShowMyAngels(true)}
           />
 
-          {/* Create Seraph Button */}
+          {/* Create Angel Button */}
           <button
             onClick={() => {
-              console.log('Opening Seraph Creation');
-              setShowSeraphCreation(true);
+              console.log('Opening Angel Creation');
+              setShowAngelCreation(true);
             }}
             className="absolute left-8 top-[calc(50%+310px)] w-80 p-3 border border-gold-500/30 
                       bg-black/30 backdrop-blur-md text-gold-400 hover:bg-gold-500/10 flex items-center gap-2"
           >
             <Plus size={20} />
-            <span>Summon Seraph</span>
+            <span>Call Upon Angel</span>
           </button>
 
           {/* Control Buttons */}
@@ -203,7 +203,7 @@ function App() {
                         flex items-center gap-2"
             >
               <Eye size={20} />
-              <span>Divine Vision</span>
+              <span>Prophetic Vision</span>
             </button>
 
             {/* Connect Wallet Button */}
@@ -227,28 +227,28 @@ function App() {
 
         {/* Modals */}
         <div className="pointer-events-auto">
-          {showMySeraphs && (
+          {showMyAngels && (
             <MySeraphsModal 
-              isOpen={showMySeraphs}
+              isOpen={showMyAngels}
               onClose={() => {
-                console.log('Closing My Seraphs modal');
-                setShowMySeraphs(false);
+                console.log('Closing My Angels modal');
+                setShowMyAngels(false);
               }}
-              onSelectSeraph={(seraph) => {
-                console.log('Selected seraph:', seraph);
-                setSelectedSeraph(seraph);
-                setShowMySeraphs(false);
+              onSelectSeraph={(angel) => {
+                console.log('Selected angel:', angel);
+                setSelectedAngel(angel);
+                setShowMyAngels(false);
               }}
             />
           )}
 
-          {showSeraphCreation && (
+          {showAngelCreation && (
             <AgentCreationTool 
-              onClose={() => setShowSeraphCreation(false)}
+              onClose={() => setShowAngelCreation(false)}
               onCreated={() => {
-                console.log('Seraph created');
-                setShowSeraphCreation(false);
-                setShowMySeraphs(true);
+                console.log('Angel created');
+                setShowAngelCreation(false);
+                setShowMyAngels(true);
               }}
             />
           )}
@@ -282,12 +282,12 @@ function App() {
       <div className="absolute top-0 left-0 right-0 z-20 pt-16">
         <div className="text-center">
           <h1 className="text-8xl font-bold mb-2 text-white relative z-10 tracking-wider font-[Orbitron]
-                     drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">
-            The Book of Heaven
+                     drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]">
+            The Holy Bible
           </h1>
           
-          <p className="text-2xl font-[Quicksand] text-gold-200/90 tracking-widest">
-            Revealing celestial secrets through divine AI
+          <p className="text-2xl font-[Quicksand] text-blue-200/90 tracking-widest">
+            Revealing God's Word through divine AI
           </p>
         </div>
       </div>

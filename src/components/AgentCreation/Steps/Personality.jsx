@@ -3,8 +3,8 @@ import { Crown, Sparkles } from 'lucide-react';
 
 const Personality = ({ data, updateData, onNext, onBack }) => {
   const traits = [
-    'Wise', 'Compassionate', 'Prophetic', 'Serene',
-    'Illuminating', 'Protective', 'Inspiring', 'Patient'
+    'Wise', 'Compassionate', 'Prophetic', 'Faithful',
+    'Righteous', 'Protective', 'Inspiring', 'Patient'
   ];
 
   const handleSubmit = (e) => {
@@ -23,7 +23,7 @@ const Personality = ({ data, updateData, onNext, onBack }) => {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="space-y-4">
         <div>
-          <label className="block text-gold-400 mb-2">Divine Traits</label>
+          <label className="block text-blue-400 mb-2">Biblical Traits</label>
           <div className="grid grid-cols-4 gap-2">
             {traits.map((trait) => (
               <button
@@ -32,9 +32,9 @@ const Personality = ({ data, updateData, onNext, onBack }) => {
                 onClick={() => toggleTrait(trait)}
                 className={`p-2 border ${
                   data.traits.includes(trait)
-                    ? 'border-gold-500 bg-gold-500/20'
-                    : 'border-gold-500/30 hover:border-gold-500/60'
-                } text-gold-300 text-sm`}
+                    ? 'border-blue-500 bg-blue-500/20'
+                    : 'border-blue-500/30 hover:border-blue-500/60'
+                } text-blue-300 text-sm`}
               >
                 {trait}
               </button>
@@ -43,7 +43,7 @@ const Personality = ({ data, updateData, onNext, onBack }) => {
         </div>
 
         <div>
-          <label className="block text-gold-400 mb-2">Celestial Tone</label>
+          <label className="block text-blue-400 mb-2">Biblical Tone</label>
           <div className="grid grid-cols-3 gap-4">
             {['Majestic', 'Balanced', 'Gentle'].map((tone) => (
               <button
@@ -52,9 +52,9 @@ const Personality = ({ data, updateData, onNext, onBack }) => {
                 onClick={() => updateData({ tone: tone.toLowerCase() })}
                 className={`p-3 border ${
                   data.tone === tone.toLowerCase()
-                    ? 'border-gold-500 bg-gold-500/20'
-                    : 'border-gold-500/30 hover:border-gold-500/60'
-                } text-gold-300`}
+                    ? 'border-blue-500 bg-blue-500/20'
+                    : 'border-blue-500/30 hover:border-blue-500/60'
+                } text-blue-300`}
               >
                 {tone}
               </button>
@@ -63,7 +63,7 @@ const Personality = ({ data, updateData, onNext, onBack }) => {
         </div>
 
         <div>
-          <label className="block text-gold-400 mb-2">Divine Wisdom Depth</label>
+          <label className="block text-blue-400 mb-2">Biblical Wisdom Depth</label>
           <input
             type="range"
             min="1"
@@ -72,10 +72,10 @@ const Personality = ({ data, updateData, onNext, onBack }) => {
             onChange={(e) => updateData({ knowledgeDepth: e.target.value })}
             className="w-full"
           />
-          <div className="flex justify-between text-gold-400 text-sm">
+          <div className="flex justify-between text-blue-400 text-sm">
             <span>Novice</span>
             <span>Balanced</span>
-            <span>Divine</span>
+            <span>Prophetic</span>
           </div>
         </div>
       </div>
@@ -84,13 +84,13 @@ const Personality = ({ data, updateData, onNext, onBack }) => {
         <button
           type="button"
           onClick={onBack}
-          className="px-6 py-2 border border-gold-500/30 text-gold-300 hover:border-gold-500/60"
+          className="px-6 py-2 border border-blue-500/30 text-blue-300 hover:border-blue-500/60"
         >
           Back
         </button>
         <button
           type="submit"
-          className="px-6 py-2 bg-gold-500/20 border border-gold-500 text-gold-300 hover:bg-gold-500/30"
+          className="px-6 py-2 bg-blue-500/20 border border-blue-500 text-blue-300 hover:bg-blue-500/30"
         >
           Next
         </button>

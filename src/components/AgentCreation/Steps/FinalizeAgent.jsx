@@ -1,49 +1,49 @@
 import React from 'react';
 import { Crown } from 'lucide-react';
 
-const FinalizeSeraph = ({ data, onBack, onFinish }) => {
-  const handleCreateSeraph = () => {
+const FinalizeProphet = ({ data, onBack, onFinish }) => {
+  const handleCreateProphet = () => {
     // Create system message
-    const systemMessage = `You are ${data.name}, a divine seraph from The Book of Heaven with the following celestial characteristics:
+    const systemMessage = `You are ${data.name}, a biblical prophet from The Holy Bible with the following characteristics:
     Sacred Purpose: ${data.purpose}
-    Divine Communication Style: ${data.communicationStyle}
-    Celestial Traits: ${data.traits.join(', ')}
-    Heavenly Domains: ${data.domains.join(', ')}
-    You are a messenger of heaven, revealing divine wisdom and celestial secrets to those who seek heavenly knowledge.`;
+    Biblical Communication Style: ${data.communicationStyle}
+    Biblical Traits: ${data.traits.join(', ')}
+    Biblical Domains: ${data.domains.join(', ')}
+    You are a messenger of God, revealing biblical wisdom and God's Word to those who seek divine knowledge.`;
 
-    // Create full seraph data
-    const seraphWithSystem = {
+    // Create full prophet data
+    const prophetWithSystem = {
       ...data,
       systemMessage
     };
 
-    // Call the onFinish callback with the created seraph
-    onFinish(seraphWithSystem);
+    // Call the onFinish callback with the created prophet
+    onFinish(prophetWithSystem);
   };
 
   return (
     <div className="space-y-6">
       <div className="space-y-4">
-        <h3 className="text-gold-400 text-xl mb-4">Review Your Divine Seraph</h3>
+        <h3 className="text-blue-400 text-xl mb-4">Review Your Biblical Prophet</h3>
 
-        <div className="bg-black/30 border border-gold-500/30 p-4 space-y-4">
+        <div className="bg-black/30 border border-blue-500/30 p-4 space-y-4">
           <div>
-            <h4 className="text-gold-400 mb-2">Divine Information</h4>
-            <p className="text-gold-300">Name: {data.name}</p>
-            <p className="text-gold-300">Sacred Purpose: {data.purpose}</p>
-            <p className="text-gold-300">Divine Style: {data.communicationStyle}</p>
+            <h4 className="text-blue-400 mb-2">Biblical Information</h4>
+            <p className="text-blue-300">Name: {data.name}</p>
+            <p className="text-blue-300">Sacred Purpose: {data.purpose}</p>
+            <p className="text-blue-300">Biblical Style: {data.communicationStyle}</p>
           </div>
 
           <div>
-            <h4 className="text-gold-400 mb-2">Celestial Nature</h4>
-            <p className="text-gold-300">Divine Traits: {data.traits.join(', ')}</p>
-            <p className="text-gold-300">Celestial Tone: {data.tone}</p>
+            <h4 className="text-blue-400 mb-2">Biblical Nature</h4>
+            <p className="text-blue-300">Biblical Traits: {data.traits.join(', ')}</p>
+            <p className="text-blue-300">Biblical Tone: {data.tone}</p>
           </div>
 
           <div>
-            <h4 className="text-gold-400 mb-2">Heavenly Expertise</h4>
-            <p className="text-gold-300">Heavenly Domains: {data.domains.join(', ')}</p>
-            <p className="text-gold-300">
+            <h4 className="text-blue-400 mb-2">Biblical Expertise</h4>
+            <p className="text-blue-300">Biblical Domains: {data.domains.join(', ')}</p>
+            <p className="text-blue-300">
               Sacred Specializations: {data.specializations.join(', ')}
             </p>
           </div>
@@ -53,15 +53,15 @@ const FinalizeSeraph = ({ data, onBack, onFinish }) => {
       <div className="flex justify-between">
         <button
           onClick={onBack}
-          className="px-6 py-2 border border-gold-500/30 text-gold-300 hover:border-gold-500/60"
+          className="px-6 py-2 border border-blue-500/30 text-blue-300 hover:border-blue-500/60"
         >
           Back
         </button>
         <button
-          onClick={handleCreateSeraph}
-          className="px-6 py-2 bg-gold-500/20 border border-gold-500 text-gold-300 hover:bg-gold-500/30 flex items-center gap-2"
+          onClick={handleCreateProphet}
+          className="px-6 py-2 bg-blue-500/20 border border-blue-500 text-blue-300 hover:bg-blue-500/30 flex items-center gap-2"
         >
-          <span>Summon Seraph</span>
+          <span>Call Prophet</span>
           <Crown size={18} />
         </button>
       </div>
@@ -69,4 +69,4 @@ const FinalizeSeraph = ({ data, onBack, onFinish }) => {
   );
 };
 
-export default FinalizeSeraph;
+export default FinalizeProphet;

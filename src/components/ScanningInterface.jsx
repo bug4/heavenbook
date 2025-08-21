@@ -84,8 +84,8 @@ const TokenCard = ({ token, walletConnected, showAlert }) => {
            </div>
            <button
              onClick={() => copyToClipboard(token.mint)}
-             className="px-4 py-1.5 bg-gold-500/10 border border-gold-500/30 
-                      text-gold-400 hover:bg-gold-500/20 transition-colors"
+             className="px-4 py-1.5 bg-blue-500/10 border border-blue-500/30 
+                      text-blue-400 hover:bg-blue-500/20 transition-colors"
              title="Copy contract address"
            >
              {copied ? <CheckCircle size={16} /> : <Copy size={16} />}
@@ -101,7 +101,7 @@ const TokenCard = ({ token, walletConnected, showAlert }) => {
                    href={metadata.twitter}
                    target="_blank"
                    rel="noopener noreferrer"
-                   className="text-gold-400 hover:text-gold-300"
+                   className="text-blue-400 hover:text-blue-300"
                  >
                    <Twitter size={16} />
                  </a>
@@ -111,7 +111,7 @@ const TokenCard = ({ token, walletConnected, showAlert }) => {
                    href={metadata.website}
                    target="_blank"
                    rel="noopener noreferrer"
-                   className="text-gold-400 hover:text-gold-300"
+                   className="text-blue-400 hover:text-blue-300"
                  >
                    <Globe size={16} />
                  </a>
@@ -121,8 +121,8 @@ const TokenCard = ({ token, walletConnected, showAlert }) => {
              {/* Buy Button */}
              <button
                onClick={handleBuy}
-               className="px-4 py-1.5 bg-gold-500/10 border border-gold-500/30 
-                        text-gold-400 hover:bg-gold-500/20 transition-colors 
+               className="px-4 py-1.5 bg-blue-500/10 border border-blue-500/30 
+                        text-blue-400 hover:bg-blue-500/20 transition-colors 
                         flex items-center gap-2 text-sm"
              >
                Buy
@@ -185,27 +185,27 @@ const ScanningInterface = ({ onClose, walletConnected, showAlert }) => {
  }, [isPaused]);
 
  return (
-   <div className="fixed bottom-20 left-1/2 -translate-x-1/2 w-[800px] bg-black/30 backdrop-blur-md border border-gold-500/30">
+   <div className="fixed bottom-20 left-1/2 -translate-x-1/2 w-[800px] bg-black/30 backdrop-blur-md border border-blue-500/30">
      {/* Header */}
-     <div className="border-b border-gold-500/30 bg-gold-900/20 p-3 flex justify-between items-center">
-       <div className="text-gold-400 text-sm font-semibold flex items-center gap-2">
+     <div className="border-b border-blue-500/30 bg-blue-900/20 p-3 flex justify-between items-center">
+       <div className="text-blue-400 text-sm font-semibold flex items-center gap-2">
          <div className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`} />
-         Divine Vision
-         {isPaused && <span className="text-gold-400/60 text-xs">(Paused)</span>}
+         Prophetic Vision
+         {isPaused && <span className="text-blue-400/60 text-xs">(Paused)</span>}
        </div>
-       <button onClick={onClose} className="text-gold-400 hover:text-gold-300">
+       <button onClick={onClose} className="text-blue-400 hover:text-blue-300">
          <X size={18} />
        </button>
      </div>
 
-     {/* Divine Revelation Box */}
-     <div className="p-3 border-b border-gold-500/30">
-       <div className="flex items-center gap-2 text-gold-400 text-sm mb-2">
+     {/* Biblical Revelation Box */}
+     <div className="p-3 border-b border-blue-500/30">
+       <div className="flex items-center gap-2 text-blue-400 text-sm mb-2">
          <Eye size={16} />
-         <span>Divine Revelation</span>
+         <span>Biblical Revelation</span>
        </div>
-       <div className="bg-gold-500/10 p-3 text-gold-300 text-sm">
-         Heavenly insights coming soon...
+       <div className="bg-blue-500/10 p-3 text-blue-300 text-sm">
+         Biblical insights coming soon...
        </div>
      </div>
 
@@ -224,8 +224,8 @@ const ScanningInterface = ({ onClose, walletConnected, showAlert }) => {
          />
        ))}
        {tokens.length === 0 && (
-         <div className="text-center text-gold-400/60 p-4">
-           Awaiting divine revelations...
+         <div className="text-center text-blue-400/60 p-4">
+           Awaiting biblical revelations...
          </div>
        )}
      </div>
