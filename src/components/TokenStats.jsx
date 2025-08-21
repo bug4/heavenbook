@@ -69,7 +69,7 @@ const TokenStats = () => {
   };
 
   return (
-    <div className="absolute right-8 top-1/2 -translate-y-1/2 w-80 bg-black/30 backdrop-blur-md border border-blue-500/30">
+    <div className="absolute right-8 top-1/2 -translate-y-1/2 w-80 bg-blue-900/30 backdrop-blur-md border border-blue-500/30">
       {/* Header */}
       <div className="border-b border-blue-500/30 bg-blue-900/20 p-2 flex items-center justify-between">
         <div className="flex items-center gap-2">

@@ -50,7 +50,7 @@ const Expertise = ({ data, updateData, onNext, onBack }) => {
             onChange={(e) => updateData({ 
               specializations: e.target.value.split(',').map(s => s.trim()) 
             })}
-            className="w-full bg-black/30 border border-blue-500/30 p-2 text-white focus:outline-none focus:border-blue-500"
+            className="w-full bg-blue-900/30 border border-blue-500/30 p-2 text-blue-200 focus:outline-none focus:border-blue-500"
             placeholder="Enter specializations (comma-separated)..."
           />
         </div>

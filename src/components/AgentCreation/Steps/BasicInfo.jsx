@@ -16,7 +16,7 @@ const BasicInfo = ({ data, updateData, onNext }) => {
             type="text"
             value={data.name}
             onChange={(e) => updateData({ name: e.target.value })}
-            className="w-full bg-black/30 border border-blue-500/30 p-2 text-white focus:outline-none focus:border-blue-500"
+            className="w-full bg-blue-900/30 border border-blue-500/30 p-2 text-blue-200 focus:outline-none focus:border-blue-500"
             placeholder="Enter prophet name..."
             required
           />
@@ -27,7 +27,7 @@ const BasicInfo = ({ data, updateData, onNext }) => {
           <textarea
             value={data.purpose}
             onChange={(e) => updateData({ purpose: e.target.value })}
-            className="w-full bg-black/30 border border-blue-500/30 p-2 text-white focus:outline-none focus:border-blue-500 h-24"
+            className="w-full bg-blue-900/30 border border-blue-500/30 p-2 text-blue-200 focus:outline-none focus:border-blue-500 h-24"
             placeholder="Describe the sacred purpose of your prophet..."
             required
           />

@@ -3,7 +3,7 @@ import { Crown, Eye, Wallet, Sparkles, Star } from 'lucide-react';
 
 const Documentation = ({ onClose }) => {
   return (
-    <div className="fixed inset-0 overflow-y-auto bg-black/95 backdrop-blur-md z-[100]">
+    <div className="fixed inset-0 overflow-y-auto bg-blue-900/95 backdrop-blur-md z-[100]">
       <div className="max-w-4xl mx-auto p-8 relative">
         {/* Close Button */}
         <button
@@ -25,7 +25,7 @@ const Documentation = ({ onClose }) => {
 
         {/* Header */}
         <div className="border-b border-blue-500/30 mb-8 pb-8">
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl font-bold text-blue-200 mb-4">
             The Holy Bible Documentation
           </h1>
           <p className="text-blue-300/90">

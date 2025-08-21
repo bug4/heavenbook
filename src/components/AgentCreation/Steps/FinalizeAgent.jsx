@@ -27,6 +27,7 @@ const FinalizeProphet = ({ data, onBack, onFinish }) => {
         <h3 className="text-blue-400 text-xl mb-4">Review Your Biblical Prophet</h3>
 
         <div className="bg-black/30 border border-blue-500/30 p-4 space-y-4">
+        <div className="bg-blue-900/30 border border-blue-500/30 p-4 space-y-4">
           <div>
             <h4 className="text-blue-400 mb-2">Biblical Information</h4>
             <p className="text-blue-300">Name: {data.name}</p>

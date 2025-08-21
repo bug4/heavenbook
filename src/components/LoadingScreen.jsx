@@ -30,9 +30,9 @@ function LoadingScreen({ onStartClick, isSplineLoaded }) {
   }, [isSplineLoaded, messages]);
 
   return (
-    <div className="fixed inset-0 bg-black z-[100] flex flex-col items-center justify-center">
+    <div className="fixed inset-0 bg-blue-900 z-[100] flex flex-col items-center justify-center">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-black pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-800/30 to-blue-900 pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_100%)]" />
       
       {/* Animated Particles */}

@@ -185,7 +185,7 @@ const ScanningInterface = ({ onClose, walletConnected, showAlert }) => {
  }, [isPaused]);
 
  return (
-   <div className="fixed bottom-20 left-1/2 -translate-x-1/2 w-[800px] bg-black/30 backdrop-blur-md border border-blue-500/30">
+   <div className="fixed bottom-20 left-1/2 -translate-x-1/2 w-[800px] bg-blue-900/30 backdrop-blur-md border border-blue-500/30">
      {/* Header */}
      <div className="border-b border-blue-500/30 bg-blue-900/20 p-3 flex justify-between items-center">
        <div className="text-blue-400 text-sm font-semibold flex items-center gap-2">
@@ -193,7 +193,7 @@ const ScanningInterface = ({ onClose, walletConnected, showAlert }) => {
          Prophetic Vision
          {isPaused && <span className="text-blue-400/60 text-xs">(Paused)</span>}
        </div>
-       <button onClick={onClose} className="text-blue-400 hover:text-blue-300">
+       <button onClick={onClose} className="text-blue-300 hover:text-blue-200">
          <X size={18} />
        </button>
      </div>

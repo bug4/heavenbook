@@ -56,12 +56,12 @@ const AgentCreationTool = ({ onClose, onCreated }) => {
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50"
     onClick={(e) => e.stopPropagation()}>
-      <div className="w-[600px] bg-black/80 border border-blue-500/30">
+      <div className="w-[600px] bg-blue-900/80 border border-blue-500/30">
         <div className="p-4 border-b border-blue-500/30 bg-blue-900/20 flex justify-between items-center">
           <h2 className="text-blue-400 text-xl">Call Your Biblical Prophet</h2>
           <button 
             onClick={onClose}
-            className="text-blue-400 hover:text-blue-300"
+            className="text-blue-300 hover:text-blue-200"
           >
             <X size={20} />
           </button>

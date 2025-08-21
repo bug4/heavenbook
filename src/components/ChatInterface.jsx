@@ -83,7 +83,7 @@ const ChatInterface = ({ currentSeraph, onButtonClick }) => {
         <button
           onClick={onButtonClick}
           className="w-full flex items-center justify-between px-3 py-2 
-                   border border-blue-500/30 bg-black/20 
+                   border border-blue-500/30 bg-blue-500/10 
                    text-blue-400 hover:bg-blue-500/10 transition-all
                    group cursor-pointer"
         >
@@ -136,12 +136,12 @@ const ChatInterface = ({ currentSeraph, onButtonClick }) => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder={currentSeraph ? `Speak with ${currentSeraph.name}...` : "Seek biblical wisdom..."}
-            className="flex-1 bg-black/30 border border-blue-500/30 p-2 text-blue-200 placeholder-blue-400/50 focus:outline-none focus:border-blue-500"
+            className="flex-1 bg-blue-900/20 border border-blue-500/30 p-2 text-blue-200 placeholder-blue-400/50 focus:outline-none focus:border-blue-500"
           />
           <button
             type="submit"
             disabled={isLoading}
-            className="p-2 bg-blue-500/20 border border-blue-500 text-blue-400 hover:bg-blue-500/30 disabled:opacity-50"
+            className="p-2 bg-blue-500/20 border border-blue-500 text-blue-300 hover:bg-blue-500/30 disabled:opacity-50"
           >
             <Send className="w-4 h-4" />
           </button>
